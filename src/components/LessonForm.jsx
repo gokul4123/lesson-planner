@@ -32,7 +32,7 @@ const LessonForm = () => {
     }));
   };
 
-const API_KEY = process.env.REACT_APP_GEMINI_API_KEY; // ✅ Correct for CRA
+const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 
   const generateLessonPlan = async () => {
     if (!topic) {
