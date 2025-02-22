@@ -32,7 +32,7 @@ const LessonForm = () => {
     }));
   };
 
-  const API_KEY = import.meta.env.GEMINI_API_KEY; // Replace with actual API key
+  const GEMINI_API_KEY = import.meta.env.API_KEY; // Replace with actual API key
 
   const generateLessonPlan = async () => {
     if (!topic) {
@@ -43,7 +43,7 @@ const LessonForm = () => {
     setLoading(true);
     try {
       const response = await axios.post(
-        `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=${GEMINI_API_KEY}`,
         {
           contents: [
             {
