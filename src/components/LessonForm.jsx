@@ -32,7 +32,7 @@ const LessonForm = () => {
     }));
   };
 
-  const GEMINI_API_KEY = import.meta.env.API_KEY; // Replace with actual API key
+  const API_KEY = import.meta.env.GEMINI_API_KEY; // Replace with actual API key
 
   const generateLessonPlan = async () => {
     if (!topic) {
