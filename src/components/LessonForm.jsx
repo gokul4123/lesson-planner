@@ -32,7 +32,7 @@ const LessonForm = () => {
     }));
   };
 
-  const API_KEY = "YOUR_API_KEY"; // Replace with actual API key
+  const API_KEY = "AIzaSyBiLMf7GRuUFZJSlJyDTkgxnVUVXp2ChKc"; // Replace with actual API key
 
   const generateLessonPlan = async () => {
     if (!topic) {
